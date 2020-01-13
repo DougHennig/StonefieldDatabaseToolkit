@@ -1,0 +1,116 @@
+<html>
+<head>
+<title>View Definitions</title>
+</head>
+
+<style>
+TABLE
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal;
+    PADDING: 5
+}
+
+TD
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal;
+    VERTICAL-ALIGN: Top
+}
+
+TH
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    BACKGROUND: Yellow
+}
+
+BODY
+{
+    BACKGROUND: #ffffeb;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal
+}
+
+H1
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: bold;
+    COLOR: Red;
+    PADDING-TOP: 0px;
+    PADDING-BOTTOM: 0px
+}
+
+H2
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    COLOR: Red;
+    PADDING-TOP: 0px;
+    PADDING-BOTTOM: 0px
+}
+</style>
+
+<body>
+<h1>View Definitions</h1>
+<p>System: <%=pcSystem%><br>
+Date: <%=date()%></p>
+<table width=100% cellspacing=0 border=2 cellpadding=5>
+<tr>
+<td width=73%>Name</td>
+<td width=13% align="center">AutoOpen</td>
+<td width=14% align="center">NoUpdate</td>
+</tr>
+</table>
+
+<%
+lcCRLF       = chr(13) + chr(10)
+lcView       = '%'
+llProperties = .F.
+scan
+	if not lcView == NAME
+		if lcView <> '%' and llProperties
+			Response.Write('</table>' + lcCRLF)
+		endif lcView <> '%' ...
+		Response.Write('<table width=100% cellspacing=0 border=0 ' + ;
+			'cellpadding=5>' + lcCRLF)
+		Response.Write('<tr>' + lcCRLF)
+		Response.Write('<td width=73% align="left"><br><b>' + alltrim(NAME) + ;
+			'</b></td>' + lcCRLF)
+		Response.Write('<td width=13% align="center"><br>' + ;
+			transform(AUTOOPEN,  'Y') + '</td>' + lcCRLF)
+		Response.Write('<td width=14% align="center"><br>' + ;
+			transform(NOUPDATE,  'Y') + '</td>' + lcCRLF)
+		Response.Write('</tr>' + lcCRLF)
+		Response.Write('</table>' + lcCRLF)
+		llProperties = not empty(PROMPT)
+		if llProperties
+			Response.Write('<table width=100% cellspacing=0 border=0 ' + ;
+				'cellpadding=5>' + lcCRLF)
+		endif llProperties
+		lcView = NAME
+	endif not lcView == NAME
+
+* Output extended properties if there are any.
+
+	if llProperties
+		Response.Write('<tr>' + lcCRLF)
+		Response.Write('<td width=20% valign="top" align="right">' + ;
+			PROMPT + '</td>' + lcCRLF)
+		Response.Write('<td width=80% valign="top">' + VALUES + '</td>' + ;
+			lcCRLF)
+		Response.Write('</tr>' + lcCRLF)
+	endif llProperties
+endscan
+if llProperties
+	Response.Write('</table>' + lcCRLF)
+endif llProperties
+%>
+</body>
+</html>

@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />   	
+    <base href="file:///<%= SYS(5) + CURDIR() %>" />
+    <topictype value="topic" />
+    <title>Welcome to West Wind Html Help Builder</title>
+    <link rel="stylesheet" type="text/css" href="templates/scripts/bootstrap/dist/css/bootstrap.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="templates/scripts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="templates/wwhelp.css" />     
+    <style>
+    h5 { margin-bottom: 5px; margin-top: 15px;}  
+    body {
+        background-image: url(bmp/images/background.jpg);
+        background-position-y: 75px;
+        background-size: cover;
+    }
+    </style> 
+</head>
+<body >
+    <img src="bmp/images/wwhelpLogo.gif" style="position: absolute; left: 2px; top: 120px; width: 150px">
+   
+    <div class="banner">
+
+        <div class="pull-right sidebar-toggle">
+            <i class="fa fa-bars"
+               title="Show or hide the topics list"></i>
+        </div>
+        <img src="bmp/images/logo.png" class="banner-logo" />
+
+        <div class="projectname">West Wind Html Help Builder</div>
+        <div class="byline">
+            <img src="bmp/topic.png" />
+            Building Documentation the easy way
+        </div>
+    </div>
+
+    <div class="content" style="margin: 35px 10px 35px 165px; max-width: 500px; min-width: 300px;">
+        <h2>Welcome to Help Builder</h2>
+ 
+       Currently there is <i>No Open Project</i> in Help Builder's IDE. Your next step is to create
+a new project or open an existing one.
+<hr/>
+             
+            <h5><i class="fa fa-plus-circle"></i>  <a href="vfps://NOOPENPROJECT/CREATEPROJECT/">Create a new Project</a></h5>
+            <p>       
+                Creates a new project that consists of a project file and all related 
+                templates, stylesheets and scripts required to render your topics.   
+            </p>
+
+                <form action="vfps://NOOPENPROJECT/OPENFILE/" method="POST" style="margin-top: 0; padding-top: 5px">
+                    
+                    <h5><i class="fa fa-file-text"></i> <a href="vfps://NOOPENPROJECT/OPENPROJECT">Open an existing Project</a></h5>
+                    <p>
+                    Open an previously created Help Builder Project. 
+	<%
+	PUBLIC ARRAY laRecent[1]
+	lnRecent = goHelp.oConfig.GetRecentList(@laRecent)
+	if lnRecent > 0
+	   lcOutput= ;
+	   [<form action="vfps://NOOPENPROJECT/OPENFILE/" method="POST" style="margin-top:0;">] +;
+	   [<select name="txtProject" onchange="form.submit();" style="padding:3px;max-width: 97%;border:1px solid silver;">] +;
+	   [<option>---   Recent Projects   ---</option>] + CHR(13) + CHR(10) 
+	
+	   FOR __x = 1 to lnRecent    
+	      lcTItemText = laRecent[__x]
+	      IF !EMPTY(lcTItemText)
+	         lcOutput = lcOutput + [<option>] + lcTItemText + [</option>] + CHR(13) + CHR(10)
+	      ENDIF
+	   ENDFOR
+	   lcoutput = lcOutput + "</select></form>"
+	   Response.Write(lcOutput)
+	endif
+	RELEASE laRecent
+	%>
+                </p>
+
+
+                    
+                        <h5 style="margin-top: 20px;"><i class="fa fa-sign-in"></i> <a href="vfps://NOOPENPROJECT/IMPORTCHM">Import from Html Help file or Html Help Workshop Project</a></h5>
+                    <p>
+                        If you have an existing CHM file or HHC project, you can import these files into Help Builder with some limitations.
+                    </p>
+        
+            
+            <h5><i class="fa fa-book"></i> <a href="vfps://NOOPENPROJECT/SHOWHELP">View Help Builder Documentation</a></h5>
+            <p>    
+            Browse the Help Builder documentation and check out what features are available for application and component documentation.
+            <p>
+            
+            <h5><i class="fa fa-briefcase"></i> <a href="vfps://NOOPENPROJECT/SHOWSTEPBYSTEP">Take a Step by Step Tour</a></h5>
+            <p>
+            Take a few minutes and run through the Step By Step guides that shows you how to setup
+            a new project, add topics, link to other topics, capture and embed images and build your
+            help file.
+            </p>
+        
+        
+            <h5><i class="fa fa-info-circle"></i> <a href="http://www.west-wind.com/wwthreads/default.asp?forum=Html+Help+Builder" target="_wwSupport">Online Support</a></h5>
+            <p>
+            Go to our online Message Board and ask a question, submit a bug report, make a suggestion or otherwise
+            discuss any issues or ideas you have about Help Builder. 
+            </p>
+
+    </div>
+</body>
+</html>

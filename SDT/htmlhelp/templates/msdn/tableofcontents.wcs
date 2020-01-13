@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <title><%= pcProjectName %></title>
+    <meta http-equiv="cache-control" CONTENT="public">
+    <meta http-equiv="cache-control" CONTENT="private">
+
+    <link rel="stylesheet" type="text/css" href="templates/scripts/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="templates/scripts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="templates/wwhelp.css" />
+</head>
+<body style="overflow: auto;">
+    <div class="toc-content">
+        <div class="toc-menu">
+            <!-- HOME LINK - enable and add HREF to link back to your site -->
+            <a href="../" class="btn btn-link btn-sm"><i class="fa fa-home"></i> Home</a>
+
+            <a href="javascript:helpBuilder.tocCollapseAll()" class="btn btn-link btn-sm" title="Collapse all topics"><i class="fa fa-minus-circle"></i></a>
+            <a href="javascript:helpBuilder.tocExpandAll()" class="btn btn-link btn-sm" title="Expand all topics"><i class="fa fa-plus-circle"></i></a>
+        </div>
+
+        <div class="input-group" style="padding-bottom: 5px; margin-bottom: 5px;margin: 5px;">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>            
+            <div style="position:relative">
+                <i id="SearchBoxClearButton" class="fa fa-times-circle toc-search-cleartext-icon"></i>
+                <input type="text" id="SearchBox" class="form-control" placeholder="Search topic headers" />
+            </div>            
+        </div>        
+
+        <nav>
+            <ul class="toc">
+                <%= pcToc %>
+            </ul>
+        </nav>
+        <br class="clearfix" />
+    </div>
+
+    <script src="templates/scripts/jquery/jquery.min.js"></script>	
+    <script src="templates/scripts/ww.jquery.js"></script>
+    <script src="templates/scripts/wwhelp.js" type="text/javascript"></script>
+    <script>
+        helpBuilder.initializeTOC();
+    </script>
+</body>
+
+</html>

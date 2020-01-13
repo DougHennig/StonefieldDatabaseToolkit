@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Stonefield Database Toolkit">
+		<param name="Local" value="index.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="How Visual FoxPro Implements a Data Dictionary">
+		<param name="Local" value="_0f60va5ii.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Installing SDT">
+		<param name="Local" value="_0f6117cvo.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Starting SDT">
+		<param name="Local" value="_0f6115od9.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Quick Start">
+		<param name="Local" value="_0f60wgzvn.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Step 1: Create the Meta Data">
+		<param name="Local" value="_0f60ww8sj.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Step 2: Add SDT to Your Project">
+		<param name="Local" value="_0f60wy78f.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Step 3: Call SDT Methods">
+		<param name="Local" value="_0f60x1iz2.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Step 4: Ship the Application to Your Client">
+		<param name="Local" value="_0f60x3yty.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCX and Stonefield Database Toolkit">
+		<param name="Local" value="_0f60x5ad0.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCX Overview">
+		<param name="Local" value="_0f60x6jz3.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="The DBCX Model">
+		<param name="Local" value="_0f60x7tpw.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="The Registry Table (DBCXREG.DBF)">
+		<param name="Local" value="_0f60x8li8.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="The DBCX Manager Class (DBCXMgr)">
+		<param name="Local" value="_0f60xy8f8.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Extension Manager Classes">
+		<param name="Local" value="_0f60y0o2v.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="How DBCX Manages Meta Data">
+		<param name="Local" value="_0f60y2eqw.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="The Core Properties Manager">
+		<param name="Local" value="_0f60y5fpr.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="The SDT Manager">
+		<param name="Local" value="_0f60y5x98.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Tutorial">
+		<param name="Local" value="_0f60y7yh8.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Setting up for the Tutorial">
+		<param name="Local" value="_0f60y8t0b.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Managing Your Data Objects">
+		<param name="Local" value="_0f60yb8kx.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Tables">
+		<param name="Local" value="_0f60ydd7v.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Fields">
+		<param name="Local" value="_0f60yffn0.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Indexes/Relations">
+		<param name="Local" value="_0f60yhqnh.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Views">
+		<param name="Local" value="_0f60yinpi.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Extended Properties for Data Objects">
+		<param name="Local" value="_0f60ykpck.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Run-Time Functions">
+		<param name="Local" value="_0f60zmq8l.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Updating Table Structures">
+		<param name="Local" value="_0f60znndo.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Recreating Indexes">
+		<param name="Local" value="_0f60zrc8o.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Repairing Table and Memo Headers">
+		<param name="Local" value="_0f60zt1b4.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="SDT Properties Dialog">
+		<param name="Local" value="_0ew10msho.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Stonefield Database Explorer">
+		<param name="Local" value="_0ew10nfz2.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Starting the Database Explorer">
+		<param name="Local" value="_0ew10qy73.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Working with the Database Explorer">
+		<param name="Local" value="_0ew10rsma.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Properties Page">
+		<param name="Local" value="_0ew1173fc.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Database Properties">
+		<param name="Local" value="_0ew1198cw.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Table Properties (tables in a database)">
+		<param name="Local" value="_0ew11a11r.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Table Properties (free tables)">
+		<param name="Local" value="_0ew11jc11.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="View Properties">
+		<param name="Local" value="_0ew11lvw1.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Field Properties (tables in a database)">
+		<param name="Local" value="_0ew11pm7v.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Field Properties (free tables)">
+		<param name="Local" value="_0ew11tg84.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Field Properties (views)">
+		<param name="Local" value="_0ew11ubmn.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Field Properties (calculated fields)">
+		<param name="Local" value="_0ew11wnar.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Index Properties">
+		<param name="Local" value="_0ew11xyux.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Extended Properties Page">
+		<param name="Local" value="_0ew11zdb5.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Database Explorer Functions">
+		<param name="Local" value="_0ew12hxo5.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Opening or Creating a Set of Meta Data">
+		<param name="Local" value="_0f512x200.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Adding an Existing Database or Free Table">
+		<param name="Local" value="_0ew12jbhu.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Batch Adding Databases or Free Tables">
+		<param name="Local" value="_0ey13piah.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Creating a Database, Table, Free Table, or View">
+		<param name="Local" value="_0ey13qmpw.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Removing a Database, Table, Free Table, or View">
+		<param name="Local" value="_0ey13rv8s.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Copying a Table or View">
+		<param name="Local" value="_0fo0zo6w2.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Modifying a Database, Table, Free Table, or View">
+		<param name="Local" value="_0ey1409yy.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="View Field Properties Wizard">
+		<param name="Local" value="_0ey13tkek.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Redefining a View">
+		<param name="Local" value="_0ey13u817.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Browsing a Table or View">
+		<param name="Local" value="_0ey13w512.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Reindexing a Table">
+		<param name="Local" value="_0ey13xkh6.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Updating a Table Structure">
+		<param name="Local" value="_0ey13yrlo.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Validating Meta Data">
+		<param name="Local" value="_0ey142d2k.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Updating Table Fields from the Field Repository">
+		<param name="Local" value="_0ey145vse.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Copying Fields Between Tables">
+		<param name="Local" value="_0ey14ak3d.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Copying or Moving a Table or View to Another Database">
+		<param name="Local" value="_0ey13sv2y.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Finding Out Which Version You Have">
+		<param name="Local" value="_0ey14c46y.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Stonefield Extended Table Designer">
+		<param name="Local" value="_0ey13hmji.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Extended Table Designer Form">
+		<param name="Local" value="_0ey14ir8d.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Field Pages">
+		<param name="Local" value="_0f510qq7n.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Index Pages">
+		<param name="Local" value="_0f510y03d.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Table Pages">
+		<param name="Local" value="_0f51138vj.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Extended Table Designer Functions">
+		<param name="Local" value="_0f51166d7.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Adding a Field">
+		<param name="Local" value="_0f511ff5h.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Moving a Field">
+		<param name="Local" value="_0f511fwyz.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Editing a Field">
+		<param name="Local" value="_0f511gb8h.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Copying a Field">
+		<param name="Local" value="_0f511hl4l.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Removing a Field">
+		<param name="Local" value="_0f511i566.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Adding an Index">
+		<param name="Local" value="_0f511ih3y.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Automatically Setting up Indexes">
+		<param name="Local" value="_0f511j8mk.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Editing an Index">
+		<param name="Local" value="_0f511l2w7.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Removing an Index">
+		<param name="Local" value="_0f511lhzh.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Copying Fields From One Table to Another">
+		<param name="Local" value="_0f511ohp0.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Saving a Table">
+		<param name="Local" value="_0f511guy4.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Field Repository">
+		<param name="Local" value="_0ey13jx8v.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Maintaining the Field Repository">
+		<param name="Local" value="_0f50qiwpb.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Adding a Field Repository field to a Table">
+		<param name="Local" value="_0f50qkfyk.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Updating Linked Fields">
+		<param name="Local" value="_0f50qptt8.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Extended Properties">
+		<param name="Local" value="_0ey13n64u.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Creating an Extended Property">
+		<param name="Local" value="_0f50pvcsb.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Editing the Value of an Extended Property">
+		<param name="Local" value="_0f50px0tr.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Editing the Structure of an Extended Property">
+		<param name="Local" value="_0f50pxqbh.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Removing an Extended Property">
+		<param name="Local" value="_0f50pymm9.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="When the Extended Properties Functions are Disabled">
+		<param name="Local" value="_0f50pzyra.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Using DBCXCreateProp to Create Properties">
+		<param name="Local" value="_0f50q0w2j.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Getting and Setting the Values of Extended Properties">
+		<param name="Local" value="_0fo0vmrvn.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Using SDT in Your Applications">
+		<param name="Local" value="_0f50qww2d.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Adding SDT to Your Project">
+		<param name="Local" value="_0f50qxt6n.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Calling SDT Methods">
+		<param name="Local" value="_0f50rbfam.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="What to Ship to Your Client">
+		<param name="Local" value="_0f50rj2ev.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Defining and Using Calculated Fields">
+		<param name="Local" value="_0f50rls2r.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="View Indexes">
+		<param name="Local" value="_0f50rzj0v.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Data Documentation">
+		<param name="Local" value="_0f50sfify.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Editing HTML Templates">
+		<param name="Local" value="_0f510m122.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Stonefield Database Toolkit Class Library">
+		<param name="Local" value="_0f50rdx2i.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Datasessions">
+		<param name="Local" value="_0f50t7be9.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Error Handling">
+		<param name="Local" value="_0f50sygqr.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Specifying Object Names">
+		<param name="Local" value="_0f50t8b5y.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Properties">
+		<param name="Local" value="_0f50t0747.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Custom Progress Dialog">
+		<param name="Local" value="_1lc0m9fsr.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Methods">
+		<param name="Local" value="_0f50syqu2.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="CloseAllAliases">
+		<param name="Local" value="_0wf0ls441.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="CreateViewIndex">
+		<param name="Local" value="_0f50s21x3.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="CreateViewIndexes">
+		<param name="Local" value="_0f50s27ni.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCDeleteProp">
+		<param name="Local" value="_0f50v0r75.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCFindObject">
+		<param name="Local" value="_0f50v251d.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCGetField">
+		<param name="Local" value="_0f50vbn7n.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCGetProp">
+		<param name="Local" value="_0f50v2rri.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCGetTableStructure">
+		<param name="Local" value="_0nf11ovvz.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCOpen">
+		<param name="Local" value="_0f50v66x3.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="DBCSetProp">
+		<param name="Local" value="_0f50vimr6.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="NeedReindex">
+		<param name="Local" value="_0f50spr1v.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="NeedUpdate">
+		<param name="Local" value="_0f50rg4e0.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="OpenAllTables">
+		<param name="Local" value="_0f50shodx.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="OpenData">
+		<param name="Local" value="_0f50rgiw5.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="OpenTable">
+		<param name="Local" value="_0f50rguyd.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Reindex">
+		<param name="Local" value="_0f50rew55.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Repair">
+		<param name="Local" value="_0f50rf7m8.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="SelectTablesToProcess">
+		<param name="Local" value="_0f50xlsky.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="SelectTag">
+		<param name="Local" value="_0f50xu9pd.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="SetRelation">
+		<param name="Local" value="_0f50xxznb.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="TestMetaData">
+		<param name="Local" value="_0f50y3ik5.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Update">
+		<param name="Local" value="_0f50rf1nh.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="SDT DBC Events">
+		<param name="Local" value="_0fo10jvek.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Utility Functions">
+		<param name="Local" value="_0f50ydzss.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="FixDBC Utility">
+		<param name="Local" value="_12y0tyyt7.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Appendices">
+		<param name="Local" value="_0f50zhrxf.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Meta Data Structures and DBCX Properties">
+		<param name="Local" value="_0f50yhfqh.htm">
+		</object>
+<ul>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="SDTMETA.DBF Structure">
+		<param name="Local" value="_0f50ymzs8.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="COREMETA.DBF Structure">
+		<param name="Local" value="_0f50z51vc.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Properties for Fields">
+		<param name="Local" value="_0f50zcpkf.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Properties for Indexes">
+		<param name="Local" value="_0f50zeazu.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Properties for Tables and Views">
+		<param name="Local" value="_0f50zeplm.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Customizing Stonefield Database Toolkit">
+		<param name="Local" value="_0f50zijjn.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Frequently Asked Questions">
+		<param name="Local" value="_0f50zk1ad.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="How a DBC Stores Properties">
+		<param name="Local" value="_12y0ua7mn.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Merging Meta Data Changes">
+		<param name="Local" value="_1ct0pgvwf.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+	<li> <object type="text/sitemap">
+		<param name="Name" value="Upgrading From Previous Versions of SDT">
+		<param name="Local" value="_0f50s4khm.htm">
+		<param name="ImageNumber" value="11">
+		</object>
+	</li>
+</ul>
+	</li>
+</ul>
+</body>
+</html>

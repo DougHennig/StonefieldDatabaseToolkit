@@ -1,0 +1,57 @@
+﻿<% Layout="~/templates/_Layout.wcs" %>
+
+<style>
+    header.error-message {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 10px 0 25px;
+        color:saddlebrown;
+    }
+    .error-detail-table td:first-child {
+        font-weight: bold;
+    }
+</style>
+<header class="content-title">
+    <i class="fa fa-warning" style="color: saddlebrown"></i> An Error has occurred processing the Template
+</header>
+
+<div class="container">
+
+    <header class="error-message"><%= poException.Message %></header>
+
+    <table class="table table-bordered table-striped error-detail-table">
+        <tr>
+            <td>Template</td>
+            <td><%= FORCEEXT(poException.procedure,"wcs") %></td>
+        </tr>
+        <tr>
+            <td>Code</td>
+            <td><%= STRTRAN(STRTRAN(poException.LineContents,"Response.Write(TRANSFORM( EVALUATE([","&lt;%=")," ]) ))"," %&gt;") %></td>
+        </tr>
+        <tr>
+            <td>Line</td>
+            <td><%= poException.LineNo %></td>
+        </tr>
+    </table>
+   
+
+    <p style="margin-top: 30px;">
+        <b>To edit and fix the template:</b>
+        <ul>
+            <li>Select the current topic in the topic list</li>
+            <li>Right click and select <i>Edit Topic Templates</i></li>
+            <li>Select <i>Edit Topic Template</i></li>
+
+        </ul>
+    </p>
+
+    <blockquote>
+        <b><i class="fa fa-info-circle"></i> Note</b> <br />
+        The code displayed is the compiled template code and the line number
+        is only an approximate location in the template. The line number reflects
+        the location in the actual compiled template source code, which can be found
+        in the the project's
+        <code>.\templates\compiled\<%= FORCEEXT(poException.procedure,"prg") %></code>
+        file.
+    </blockquote>
+</div>

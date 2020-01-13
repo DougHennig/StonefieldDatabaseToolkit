@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Summary</title>
+</head>
+
+<style>
+TABLE
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal;
+    PADDING: 5
+}
+
+TD
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal;
+    VERTICAL-ALIGN: Top
+}
+
+TH
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: bold;
+    BACKGROUND: Yellow
+}
+
+BODY
+{
+    BACKGROUND: #ffffeb;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 9pt;
+    FONT-WEIGHT: normal
+}
+
+H1
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 14pt;
+    FONT-WEIGHT: bold;
+    COLOR: Red;
+    PADDING-TOP: 0px;
+    PADDING-BOTTOM: 0px
+}
+
+H2
+{
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold;
+    COLOR: Red;
+    PADDING-TOP: 0px;
+    PADDING-BOTTOM: 0px
+}
+</style>
+
+<body>
+<h1>Summary<%=iif(plSingleTable, ' for ' + alltrim(TABLE), '')%></h1>
+<p>System: <%=pcSystem%><br>
+Date: <%=date()%></p>
+
+<%
+lcCRLF  = chr(13) + chr(10)
+lcTable = '%'
+lcType  = '%'
+scan
+	if not TABLE == lcTable
+
+* If we're on a new table, output a line.
+
+		if lcTable <> '%'
+			Response.Write('<hr>' + lcCRLF)
+		endif lcTable <> '%'
+
+* If we're not doing a single table, output the table name.
+
+		if not plSingleTable
+			Response.Write('<h2>' + iif(empty(DATABASE), 'Free ', '') + ;
+				iif(TABLETYPE = 'V', 'View: ', 'Table: ') + alltrim(TABLE) + ;
+				'</h2>' + lcCRLF)
+		endif not plSingleTable
+
+* Start the record size at 1 (includes deleted flag).
+
+		lnSize  = 1
+		lnNulls = 0
+		lcTable = TABLE
+		lcType  = '%'
+	endif not TABLE == lcTable
+
+* If we're on a different record type, output the column headings (first output
+* the record size for the previous table).
+
+	if RTYPE <> lcType
+		if lcTable <> 'Field Repository' and lcType = 'F'
+			Response.Write('<hr>' + lcCRLF)
+			Response.Write('Total record size: ' + ;
+				alltrim(str(lnSize + ceiling(lnNulls/8))) + lcCRLF)
+		endif lcTable <> 'Field Repository' ...
+		Response.Write('<p><b>' + iif(RTYPE = 'F', 'Fields:', 'Tags:') + ;
+			'</b></p>' + lcCRLF)
+		Response.Write('<table width=100% cellspacing=0 border=2 ' + ;
+			'cellpadding=5>' + lcCRLF)
+		Response.Write('<tr>' + lcCRLF)
+		Response.Write('<td width=41% align="left">' + ;
+			iif(RTYPE = 'F', 'Field Name', 'Tag') + '</td>' + lcCRLF)
+		Response.Write('<td width=13% align="left">Type</td>' + lcCRLF)
+		if RTYPE = 'F'
+			Response.Write('<td width=4% align="right">Len</td>' + lcCRLF)
+			Response.Write('<td width=4% align="right">Dec</td>' + lcCRLF)
+			Response.Write('<td width=38% align="left">Caption</td>' + lcCRLF)
+		else
+			Response.Write('<td width=4% align="center">Des</td>' + lcCRLF)
+			Response.Write('<td width=42% align="left">Expression</td>' + ;
+				lcCRLF)
+		endif RTYPE = 'F'
+		Response.Write('</tr>' + lcCRLF)
+		Response.Write('</table>' + lcCRLF)
+		lcType = RTYPE
+	endif RTYPE <> lcType
+
+* Output the field or index properties.
+
+	Response.Write('<table width=100% cellspacing=0 border=0 cellpadding=5>' + ;
+		lcCRLF)
+	Response.Write('<tr>' + lcCRLF)
+	Response.Write('<td width=41% align="left"><br>' + alltrim(NAME) + ;
+		'</td>' + lcCRLF)
+	Response.Write('<td width=13% align="left"><br>' + alltrim(TYPE) + ;
+		'</td>' + lcCRLF)
+	if RTYPE = 'F'
+		Response.Write('<td width=4% align="right"><br>' + ;
+			alltrim(str(FIELD_LEN)) + '</td>' + lcCRLF)
+		Response.Write('<td width=4% align="right"><br>' + ;
+			alltrim(str(FIELD_DEC)) + '</td>' + lcCRLF)
+		Response.Write('<td width=38% align="left"><br>' + ;
+			alltrim(EXPRESSION) + '</td>' + lcCRLF)
+		lnSize  = lnSize  + FIELD_LEN
+		lnNulls = lnNulls + iif(DESCEND = 'Y', 1, 0)
+	else
+		Response.Write('<td width=4% align="center"><br>' + DESCEND + ;
+			'</td>' + lcCRLF)
+		Response.Write('<td width=42% align="left"><br>' + ;
+			alltrim(EXPRESSION) + '</td>' + lcCRLF)
+	endif RTYPE = 'F'
+	Response.Write('</tr>' + lcCRLF)
+	Response.Write('</table>' + lcCRLF)
+	if not empty(COMMENT)
+		Response.Write('<table width=100% cellspacing=0 border=0 ' + ;
+			'cellpadding=5>' + lcCRLF)
+		Response.Write('<tr>' + lcCRLF)
+		Response.Write('<td width=100% align="left">' + ;
+			alltrim(COMMENT) + '</td>' + lcCRLF)
+		Response.Write('</tr>' + lcCRLF)
+		Response.Write('</table>' + lcCRLF)
+	endif not empty(COMMENT)
+endscan
+
+* Output the record size for the last table.
+
+if lcTable <> 'Field Repository' and lcType = 'F'
+	Response.Write('<hr>' + lcCRLF)
+	Response.Write('Total record size: ' + ;
+		alltrim(str(lnSize + ceiling(lnNulls/8))) + lcCRLF)
+endif lcTable <> 'Field Repository' ...
+%>
+</body>
+</html>

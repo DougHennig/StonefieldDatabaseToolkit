@@ -1,0 +1,50 @@
+﻿<% Layout="~/templates/_Layout.wcs" %>
+
+<header class="content-title">
+    <img src="bmp/<%= TRIM(lower(oHelp.oTopic.Type))%>.png">
+    <%= iif(oHelp.oTopic.Static,[<img src="bmp/static.png" />],[]) %>
+    <%= EncodeHtml(TRIM(oHelp.oTopic.Topic)) %>
+</header>
+
+<div id="TimeToRead"></div>
+
+<div class="content-body" id="body">
+<%= oHelp.FormatHTML(oHelp.oTopic.Body) %>
+</div>
+
+<% if !EMPTY(oHelp.oTopic.Syntax) %>
+<pre class="syntaxbox" id="syntax">
+<%= EncodeHtml( TRIM(oHelp.oTopic.Syntax) ) %></pre>
+<% endif %>
+
+<% IF !EMPTY(oHelp.oTopic.Parameters) %>    
+<h3 class="outdent" id="parameters">Default Value</h3>
+<%= oHelp.FormatHTML(strtran(oHelp.oTopic.Parameters,"b>","i>"))%>
+<% ENDIF %>  
+
+<% IF !EMPTY(oHelp.oTopic.Contract) %>
+<h3 class="outdent">Contracts</h3>
+<%= oHelp.FormatHTML(oHelp.oTopic.Contract)%>
+<% ENDIF %>
+
+<% IF !EMPTY(oHelp.oTopic.Exceptions) %>
+<h3 class="outdent" id="exceptions">Exceptions</h3>
+<%= strtran( InsertExceptions(oHelp),"b>","i>") %>	
+<% ENDIF %>
+
+<% IF !EMPTY(oHelp.oTopic.Remarks) %>
+<h3 class="outdent" id="remarks">Remarks</h3>
+<blockquote>
+<%= oHelp.FormatHTML(oHelp.oTopic.Remarks) %>
+</blockquote>
+<% ENDIF %>  
+
+<% IF !EMPTY(oHelp.oTopic.Example) %>
+<h3 class="outdent" id="example">Example</h3>
+	<%= oHelp.FormatExample(oHelp.oTopic.Example)%>
+<% ENDIF %>  
+
+<% IF !EMPTY(oHelp.oTopic.SeeAlso) %>
+<h3 class="outdent" id="seealso">See also:</h3>
+<%= lcSeeAlsoTopics %>
+<% ENDIF %>

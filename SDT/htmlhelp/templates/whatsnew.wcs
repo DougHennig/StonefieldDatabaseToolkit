@@ -1,0 +1,28 @@
+﻿<% Layout="~/templates/_Layout.wcs" %>
+
+<h1 class="content-title">
+    <img src="bmp/<%= TRIM(LOWER(oHelp.oTopic.Type))%>.png">
+    <%= iif(oHelp.oTopic.Static,[<img src="bmp/static.png" />],[]) %>
+    <%= EncodeHtml(TRIM(oHelp.oTopic.Topic)) %>
+</h1>
+
+<div id="TimeToRead"></div>
+
+<div class="content-body">
+<%= oHelp.FormatHTML(oHelp.oTopic.Body) %>
+</div>
+
+<% IF !EMPTY(oHelp.oTopic.Remarks) %>
+<h3 class="outdent">Remarks</h3>
+    <%= oHelp.FormatHTML(oHelp.oTopic.Remarks) %>
+<% ENDIF %>  
+
+<% IF !EMPTY(oHelp.oTopic.Example) %>
+<h3 class="Outdent" id="example">Example</h3>
+<%= oHelp.FormatExample(oHelp.oTopic.Example)%>
+<% ENDIF %>  
+
+<% if !EMPTY(oHelp.oTopic.SeeAlso) %>
+<h3 class="outdent">See also</h3>
+<%= lcSeeAlsoTopics %>
+<%  endif %>

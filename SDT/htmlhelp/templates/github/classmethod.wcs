@@ -1,0 +1,62 @@
+﻿<% Layout="~/templates/_Layout.wcs" %>
+
+<header class="content-title">
+    <img src="bmp/<%= TRIM(oHelp.oTopic.Type)%>.png">
+    <%= iif(oHelp.oTopic.Static,[<img src="bmp/static.png" />],[]) %>
+    <%= EncodeHtml(TRIM(oHelp.oTopic.Topic)) %>
+</header>
+
+<div id="TimeToRead"></div>
+
+<div class="content-body" id="body">
+<%= oHelp.FormatHTML(oHelp.oTopic.Body) %>
+</div>
+
+<% IF !EMPTY(oHelp.oTopic.Syntax) %>
+<pre class="syntaxbox" id="syntax">
+<%= EncodeHtml( TRIM(oHelp.oTopic.Syntax) ) %>
+</pre>
+<% ENDIF %>
+
+<% IF !EMPTY(oHelp.oTopic.Returns) %>   
+<h3 class="outdent" id="returnvalue">Return Value</h3>
+<%= oHelp.FormatHTML(oHelp.oTopic.Returns)%>
+<% ENDIF %>
+
+<% IF !EMPTY(oHelp.oTopic.Parameters) %>    
+<h3 class="outdent" id="parameters">Parameters</h3>
+<div class="parameter-block" style="margin-left: 1em !important;">
+<%= oHelp.FormatHTML(oHelp.oTopic.Parameters)%>
+</div>
+
+<% ENDIF %>  
+
+<% IF !EMPTY(oHelp.oTopic.Exceptions) %>
+<h3 class="outdent" id="exceptions">Exceptions</h3>
+<%=  InsertExceptions(oHelp) %>	
+<% ENDIF %> 
+
+<% IF !EMPTY(oHelp.oTopic.Contract) %>
+<h3 class="outdent" id="contracts">Contracts</h3>
+<%= oHelp.FormatHTML(oHelp.oTopic.Contract)%>
+<% ENDIF %>
+
+<% IF !EMPTY(oHelp.oTopic.Remarks) %>
+<h3 class="outdent" id="remarks">Remarks</h3>
+<blockquote>
+<%= oHelp.FormatHTML(oHelp.oTopic.Remarks) %>
+</blockquote>
+<% ENDIF %>  
+
+<% IF !EMPTY(oHelp.oTopic.Example) %>
+<h3 class="outdent" id="example">Example</h3>
+<%= oHelp.FormatExample(oHelp.oTopic.Example)%>
+<% ENDIF %> 
+
+<%= InsertMethodOverloads(oHelp) %>
+
+<% if !EMPTY(oHelp.oTopic.SeeAlso) %>
+<br>
+<h3 class="outdent" id="seealso">See also:</h3>
+<%= lcSeeAlsoTopics %>
+<%  endif %>
